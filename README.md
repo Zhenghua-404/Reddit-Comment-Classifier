@@ -1,2 +1,5 @@
 # Reddit-Comment-Classifier
- analyze text from Reddit by developing a classiﬁcation model that can predict which of 20 communities a comment belongs to
+ We analyzed text from Reddit by developing a classiﬁcation model that can predict which of 20 communities a comment belongs to.
+ 
+ In this work our dataset includes 70000 comments, each has one column indicating the subreddit it comes from. The data is assumed to be balanced among all categories. The task of ﬁnding the most outstanding model could be divided into four steps: ﬁrst, we transformed the data by turning categories into numbers and tokenizing; second, we selected features in two ways, bag-of-words or lemmatizing based on what models we used, also applying stop-words and tf-idf method to ﬁlter out commonly-seenwords;third,weimplementedBernoulliNa¨ıve Bayes model from scratch and used Scikitlearn to build other models; last, we developed a k-fold-cross-validation pipeline to test the performance of these models. After analyzing their performance, we found that that among all these models in a given time, multinomial na¨ıve bayes predicts best when we adjusting the parameter carefully, reaching an accuracy of 0.57499, but if regardless of time cost, BERT achieves the highest accuracy than any other model, which is up to 0.61022.
+
